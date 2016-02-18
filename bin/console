@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "redd"
+
+# Add fixtures and/or initialization code to make experimenting easier.
+
+require "pry"
+Pry.start
