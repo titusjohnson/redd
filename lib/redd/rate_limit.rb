@@ -38,8 +38,8 @@ module Redd
     # Update the instance variables with the response headers.
     def update(response)
       @last_request_time = Time.now
-      @reset = response.headers["x-ratelimit-reset"]
-      @remaining = response.headers["x-ratelimit-remaining"]
+      @reset = response.headers["x-ratelimit-reset"].to_i
+      @remaining = response.headers["x-ratelimit-remaining"].to_i
     end
   end
 end

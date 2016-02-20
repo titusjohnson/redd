@@ -4,6 +4,7 @@ module Redd
   module API
     # Authentication details for OAuth2 access.
     # @todo Add methods to refresh or revoke.
+    # @todo Add marshalling/serialization support.
     class Access < Base
       # @return [String] the access token used to access the users account.
       property :access_token

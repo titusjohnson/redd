@@ -12,14 +12,14 @@ module Redd
         @app.call(request_env).on_complete { |env| on_complete(env) }
       end
 
+      private
+
       def on_complete(env)
         error = detect_error(env)
         raise error.new(env), env[:body].to_s if error
       end
 
-      private
-
-      # A very error detect "algorithm" :P
+      # A very simple error detection "algorithm" :P
       # @todo Improve!
       def detect_error(env)
         Redd::Error::APIError if env[:status] != 200

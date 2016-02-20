@@ -14,7 +14,7 @@ module Redd
         def req_object(meth, path, params = {})
           body = req(meth, path, params).body
           obj = OBJECT_KINDS.fetch(body[:kind], API::Base)
-          obj.from_response(self, flat)
+          obj.from_response(self, body)
         end
       end
     end

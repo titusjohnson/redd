@@ -25,7 +25,7 @@ module Redd
       # @return [String] the reddit api url.
       attr_reader :api_endpoint
 
-      # @return [#after_limit] the class responsible for rate limiter.
+      # @return [#after_limit] the class responsible for rate limiting.
       attr_accessor :rate_limit
 
       # @return [API::Access] the object with session-specific details.

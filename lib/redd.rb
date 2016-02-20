@@ -1,4 +1,5 @@
 require "redd/version"
+require "redd/client/script"
 require "redd/client/userless"
 
 # The main Redd module.
@@ -36,10 +37,10 @@ module Redd
   #
   def self.it(type, *args, **kwargs)
     types = {
-      # installed: Clients::Installed,
-      # script: Clients::Script,
+      script: Client::Script,
       userless: Client::Userless,
-      # web: Clients::Web
+      # installed: Client::Installed,
+      # web: Client::Web
     }
 
     types[type].new(*args, **kwargs)

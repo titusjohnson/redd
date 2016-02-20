@@ -1,6 +1,7 @@
 require "multi_json"
 
 module Redd
+  # Faraday response middleware.
   module Response
     # JSON API parser.
     class ParseJSON
@@ -11,6 +12,8 @@ module Redd
       def call(request_env)
         @app.call(request_env).on_complete { |env| on_complete(env) }
       end
+
+      private
 
       def on_complete(env)
         env[:body] = MultiJson.load(env[:body], symbolize_keys: true)
