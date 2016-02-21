@@ -33,8 +33,6 @@ module Redd
 
         # Define an attribute method.
         # @param [Symbol] name the property to create.
-        # @!macro [attach] property
-        #   @!attribute [r] $1
         def property(name)
           define_method(name) { @response[name] }
           define_method(:"#{name}?") { @response[name] ? true : false }

@@ -5,10 +5,12 @@ module Redd
     # A reddit thing.
     # @see http://www.reddit.com/dev/api#fullnames
     class Thing < Base
-      # @return [String] an object kind, usually t1-5.
+      # @!attribute [r] kind
+      #   @return [String] an object kind, usually t1-5.
       property :kind
 
-      # @return [String] the unique id for the object.
+      # @!attribute [r] id
+      #   @return [String] the unique id for the object.
       property :id
 
       # @return [String] The fullname of the thing.

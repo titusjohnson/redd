@@ -6,10 +6,12 @@ module Redd
     # @todo Add methods to refresh or revoke.
     # @todo Add marshalling/serialization support.
     class Access < Base
-      # @return [String] the access token used to access the users account.
+      # @!attribute [r] access_token
+      #   @return [String] the access token used to access the users account.
       property :access_token
 
-      # @return [String, nil] the refresh token, if the access was permanent.
+      # @!attribute [r] access_token
+      #   @return [String, nil] the refresh token, if the access was permanent.
       property :refresh_token
 
       # @return [Array] the scopes that the client is allowed to access.
