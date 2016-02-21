@@ -1,5 +1,5 @@
 RSpec.describe Redd::Response::ParseJSON do
-  it "symbolizes keys"
-  it "parses JSON correctly"
-  it "throws Redd::Error::JSONError if parsing fails"
+  pending "symbolizes keys"
+  pending "parses JSON correctly"
+  pending "throws Redd::Error::JSONError if parsing fails"
 end

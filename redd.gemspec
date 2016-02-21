@@ -33,6 +33,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rubocop", "~> 0.37"
 
   spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "factory_girl", "~> 4.5"
+  spec.add_development_dependency "coveralls", "~> 0.8"
   spec.add_development_dependency "vcr", "~> 3.0"
   spec.add_development_dependency "webmock", "~> 1.22"
 end

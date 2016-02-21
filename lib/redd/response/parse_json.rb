@@ -1,4 +1,5 @@
 require "multi_json"
+require "redd/error"
 
 module Redd
   # Faraday response middleware.
@@ -18,7 +19,7 @@ module Redd
       def on_complete(env)
         env[:body] = MultiJson.load(env[:body], symbolize_keys: true)
       rescue MultiJson::ParseError
-        raise JSONError.new(env), env[:body]
+        raise Error::JSONError.new(env), env[:body]
       end
     end
   end
