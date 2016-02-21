@@ -3,7 +3,7 @@ require "redd"
 require "factory_girl"
 require "vcr"
 
-if RUBY_PLATFORM == "java"
+if RUBY_PLATFORM != "java"
   require "coveralls"
   Coveralls.wear!
 end
