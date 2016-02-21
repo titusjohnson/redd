@@ -3,8 +3,10 @@ require "redd"
 require "factory_girl"
 require "vcr"
 
-require "coveralls"
-Coveralls.wear!
+if RUBY_PLATFORM == "java"
+  require "coveralls"
+  Coveralls.wear!
+end
 
 VCR.configure do |config|
   config.cassette_library_dir = "spec/cassettes"

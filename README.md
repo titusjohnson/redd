@@ -1,26 +1,6 @@
-# Redd
+[![Gem Version](https://badge.fury.io/rb/redd.svg)](https://badge.fury.io/rb/redd)
+[![Coverage Status](https://coveralls.io/repos/github/avinashbot/redd/badge.svg?branch=rewrite)](https://coveralls.io/github/avinashbot/redd?branch=rewrite)
+[![Build Status](https://travis-ci.org/avinashbot/redd.svg?branch=rewrite)](https://travis-ci.org/avinashbot/redd)
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'redd'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install redd
-
-## Usage
-
-TODO: Write usage instructions here
-
-## License
-
-The gem is available as open source under the terms of the
-[MIT License](http://opensource.org/licenses/MIT).
+**redd** by *@avinashbot*  
+A powerful API wrapper for writing powerful bots.
