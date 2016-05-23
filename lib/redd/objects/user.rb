@@ -47,6 +47,10 @@ module Redd
       def get_gildings_given(**params)
         get_gilded(**params.merge(show: "given"))
       end
+
+      def get_subscriptions
+        client.request_object(:get, '/subreddits/mine.json')
+      end
     end
   end
 end
